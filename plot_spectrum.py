@@ -9,8 +9,7 @@ import numpy as np
 import matplotlib
 matplotlib.use('agg')
 import matplotlib.pyplot as plt
-import math
-import random
+
 
 # Input spectrum - you will want to change 'Filename.txt' to whatever file you wish to use.
 filename = 'Filename.txt'
@@ -59,8 +58,7 @@ ax1.text(1.75, 0.75, 'Noise spectrum', color='black')
 line1, = ax1.plot(x1, y1, color='blue')
 line2, = ax1.plot(x1, z1, color='red')
 
-# Set axes to get rid of unneeded white space
-
+# Set axes to remove unneeded white space
 ax1.set_xlim(left = x_start, right = x_stop)
 ax1.set_ylim(y_start, y_stop)
 
